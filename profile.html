@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile-Page">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Profile-Page</title>
+</head>
+<body>
+  <div class="px-4 py-5 my-5 text-center" >
+    <div class="col-lg-6 mx-auto">
+      <div class="card mb-3 text-light shadow-lg p-3 mb-5 bg-body-secondary rounded" style="max-width: 540px;background: rgb(44,22,82);
+       background: linear-gradient(90deg, rgba(44,22,82,1) 100%, rgba(222,142,209,1) 100%);">
+        <div class="row g-0">
+          <div class="col-md-4 shadow p-3 mb-5 rounded">
+            <img
+             src="https://media.istockphoto.com/id/1316420668/vector/user-icon-human-person-symbol-social-profile-icon-avatar-login-sign-web-user-symbol.jpg?s=612x612&w=0&k=20&c=AhqW2ssX8EeI2IYFm6-ASQ7rfeBWfrFFV4E87SaFhJE="
+             alt=""
+             class="rounded-circle mx-auto d-block"
+             width="150"
+           />
+            <h6 class="text-center mt-4" >Skill Sets</h6>
+            <p class="text-center" id="skill" style="font-size: 10px">
+            </p>
+            <div class="d-grid gap-2 col-12 mx-auto">
+              <button class="btn btn-outline-light" type="button" id="log-out">Log Out</button>
+            </div>
+          </div>
+          <div class="col-md-8 shadow p-3 mb-5 rounded">
+            <div class="card-body text-center">
+              <small class="text-light" id="user-email"></small>
+              <small class="text-light" id="gender"></small>
+              <p class="card-text fs-5" id="username"></p>
+              <p class="card-text">
+              <small class="text-light">
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Eos, error. Nobis obcaecati eveniet voluptas cum similique
+                 ad sapiente libero ullam
+              </small>
+              </p>
+              <p class="card-text">
+              <small class="text-light" id="contact"></small> 
+              </p>
+              <p class="card-text">
+                <small class="text-light">
+                  <button type="button" id="edit-btn" class="btn btn-outline-light col-4 me-4"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                  </button>
+                  <button class="btn btn-outline-light col-4" id="delete-btn">
+                  Delete
+                  </button>
+                </small>
+              </p>
+              <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Edit details</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="username">
+                        <label for="name"> username</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Address" placeholder="Address">
+                        <label for="Address">Address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="phone" placeholder="phone">
+                        <label for="phone">phone</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="city" placeholder="city">
+                        <label for="city">city</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="state" placeholder="state">
+                        <label for="state">state</label>
+                      </div>
+                      <div class="mb-4">
+                        <label for="gender" class="float-start text-dark">Gender</label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Male">&nbsp;Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="Female">&nbsp;Female
+                      </div>
+                      <div class="mb-3 ">
+                        <label for="skill" class="float-start">Skills</label>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Mean">
+                            <label class="form-check-label" for="inlineCheckbox1">Mean</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Mern">
+                            <label class="form-check-label" for="inlineCheckbox2">Mern</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Andriod">
+                            <label class="form-check-label" for="inlineCheckbox3">Andriod</label>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" id="update-btn">update</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+  import { getAuth,updateEmail , signOut ,deleteUser } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+  import { getDatabase,set,ref,onValue,update} from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"
+      // Firebase configuration
+  const firebaseConfig = {
+  apiKey: "AIzaSyCbyflQJHanC5NgOsAlRc_Gq2j6XXtPalM",
+  authDomain: "login-project-e22c0.firebaseapp.com",
+  projectId: "login-project-e22c0",
+  storageBucket: "login-project-e22c0.appspot.com",
+  messagingSenderId: "781115133388",
+  appId: "1:781115133388:web:d95deffc54963f1a61e169"
+  };
+    
+      // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth();
+  const database = getDatabase();
+  let name=document.querySelector("#username")
+  let useremail=document.querySelector("#user-email")
+  let skill=document.querySelector("#skill")
+  let gender=document.querySelector("#gender")
+  let contact=document.querySelector("#contact")
+  let phone=document.querySelector("#phone")
+  let editbtn=document.querySelector("#edit-btn")
+  let updatebtn=document.querySelector("#update-btn")
+  let logOut=document.querySelector("#log-out")
+  let deletebtn=document.querySelector("#delete-btn")
+  
+  let urlParams = new URLSearchParams(location.search);
+  const [id] = urlParams.values();
+  console.log(id);
+  const userRef = ref(database, "users/" + id);
+  onValue(userRef, (snapshot) => {
+        const data = snapshot.val();
+        console.log(data);
+        name.textContent=data?.username;
+        useremail.textContent = data?.email;
+        skill.textContent = data?.skill;
+        gender.textContent=`| ${data?.gender}`;
+        contact.textContent=`contact: ${data?.address} | ${data?.city} | ${data?.state} |  ${data?.phone}`;
+        
+      });
+
+// edit
+  editbtn.addEventListener("click",(e)=>{
+       e.preventDefault()
+       let uname=document.querySelector("#name")
+       let uemail=document.querySelector("#floatingInput")
+       let upassword=document.querySelector("#floatingPassword")
+       let uaddress=document.querySelector("#Address")
+       let uphone=document.querySelector("#phone")
+       let ustate=document.querySelector("#state")
+       let ucity=document.querySelector("#city")
+       let ugender=document.querySelectorAll("[type='radio']")
+       let ucheckBox=document.querySelectorAll("[type='checkbox']")
+       let urlParams = new URLSearchParams(location.search);
+       const [id] = urlParams.values();
+       const userRef = ref(database, "users/" + id);
+      onValue(userRef, (snapshot) => {
+      const data = snapshot.val();
+      console.log(data);
+      uname.value=data?.username;
+      uemail.value= data?.email;
+      upassword.value=data?.password;
+      ucity.value=data?.city
+      ucheckBox.forEach((checkBox)=>{
+      if(data?.skill.includes(checkBox.value))
+      checkBox.checked=true
+      });
+      ugender.forEach((radio) => {
+      if (radio.value === data?.gender) {
+      radio.checked = true;
+       }
+      })
+      uaddress.value=data?.address ;
+      uphone.value=data?.phone
+      ustate.value =data?.state;
+      });
+})
+
+//update
+  updatebtn.addEventListener("click",(e)=>{
+    e.preventDefault()
+       let uname=document.querySelector("#name")
+       let uemail=document.querySelector("#floatingInput")
+       let upassword=document.querySelector("#floatingPassword")
+       let uaddress=document.querySelector("#Address")
+       let uphone=document.querySelector("#phone")
+       let ustate=document.querySelector("#state")
+       let ucity=document.querySelector("#city")
+       let ugender=document.querySelectorAll("[type='radio']")
+       let ugenderValue=""
+       ugender.forEach((gender)=>{
+          if(gender.checked){
+            ugenderValue+=gender.value
+            }
+        })
+       let ucheckbox=document.querySelectorAll("[type='checkbox']")
+       let uselectedvalue=""
+       ucheckbox.forEach((skills)=> {
+          if(skills.checked){
+            uselectedvalue+=skills.value+" | ";
+            }
+        })
+      let newData = {
+        uid: id,
+        username:uname.value,
+        email: uemail.value,
+        password:upassword.value,
+        phone:uphone.value,
+        address:uaddress.value,
+        city:ucity.value,
+        state:ustate.value,
+        gender:ugenderValue,
+        skill:uselectedvalue,
+      };
+      const updates = {};
+      updates["/users/" + id] = newData;
+      update(ref(database), updates);
+      updateEmail(auth.currentUser,uemail.value).then(() => {
+        console.log("email updated")
+      })
+      .catch((error) => {
+        console.log(error)
+      });
+      alert("user update successfully")
+      $("#exampleModal").modal('hide')
+ })
+
+  //Logout
+ logOut.addEventListener("click", (e) => {
+        e.preventDefault();
+        signOut(auth).then(() => {
+          alert("Signed out successfully");
+          sessionStorage.removeItem(id);
+          window.location.href = "index.html";
+        });
+  });
+
+  
+  //delete
+  deletebtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let response = confirm("Delete User?");
+        if (response) {
+          const updates = {};
+          updates["/users/" + id] = null;
+          update(ref(database), updates);
+          const removeProfile = auth?.currentUser;
+          console.log(removeProfile);
+          deleteUser(removeProfile).then(() => {
+            sessionStorage.removeItem(id);
+            window.location.href = "index.html";
+            alert("deleted successfully");
+          });
+        }
+  });
+
+
+
+      </script>
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>
